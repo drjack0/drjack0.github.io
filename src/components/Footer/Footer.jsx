@@ -38,12 +38,8 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          Matteo Giaccone | Full Stack Developer | drjackdevelopment@gmail.com - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          Matteo Giaccone | Full Stack Developer | Based in Rome - drjackdevelopment@gmail.com
         </p>
-
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
