@@ -19,7 +19,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'projects/project.jpg',
+  img: 'logos/site_logo_full.png',
   paragraphOne: 'First Paragraph',
   paragraphTwo: 'Second Paragraph',
   paragraphThree: 'Third Paragraph',
