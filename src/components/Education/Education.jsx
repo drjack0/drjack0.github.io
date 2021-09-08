@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
 
 const Education = () => {
   const { education } = useContext(PortfolioContext);
@@ -29,7 +27,7 @@ const Education = () => {
           <Title title="Education" />
           <Row>
           {education.map((elem) => {
-            const { title, info, info2, url, repo, img, id } = elem;
+            const { title, info, info2, url, repo, id } = elem;
 
             return (
                 <Col key={id} lg={4} sm={12}>

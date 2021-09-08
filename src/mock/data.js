@@ -68,7 +68,6 @@ export const projectsData = [
 export const educationData = [
   {
     id: nanoid(),
-    img: 'education/school.png',
     title: 'High School Diploma',
     info: 'Liceo Scientifico Statale \"G.B. Morgagni\"',
     info2: 'Graduation Score: 84/100',
@@ -77,7 +76,6 @@ export const educationData = [
   },
   {
     id: nanoid(),
-    img: 'education/graduate.png',
     title: 'Bachelor\'s Degree - Sapienza University of Rome',
     info: 'Ingegneria Informatica & Automatica',
     info2: 'Graduation Score: 99/110',
@@ -86,7 +84,6 @@ export const educationData = [
   },
   {
     id: nanoid(),
-    img: 'education/exams.png',
     title: 'Masters\'s Degree - Sapienza University of Rome',
     info: 'Engineering in Computer Science',
     info2: 'Work in progress...',
@@ -99,7 +96,6 @@ export const educationData = [
 export const experienceData = [
   {
     id: nanoid(),
-    img: 'education/school.png',
     title: 'IT - Technical Support',
     info: 'Technical and IT support in the organization of congresses in the medical field',
     info2: 'work for: InventaWide',
@@ -108,7 +104,6 @@ export const experienceData = [
   },
   {
     id: nanoid(),
-    img: 'education/school.png',
     title: 'IT - Web Developer',
     info: 'Complete development of the website',
     info2: 'work for: EuroSTA srl',
