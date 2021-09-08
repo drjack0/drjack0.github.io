@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
+import SkillsImg from '../Image/SkillsImg';
+
 const Education = () => {
   const { experience } = useContext(PortfolioContext);
 
@@ -70,6 +72,67 @@ const Education = () => {
                 </Col>
             );
           })}
+          </Row>
+          <Title title="Technical Skills" />
+          <Row>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/aws.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/node-js.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/react-js.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/javascript.png"} />
+                </div>
+              </Fade>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/server.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/html.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/css.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/github.png"} />
+                </div>
+              </Fade>
+            </Col>
           </Row>
         </div>
       </Container>
