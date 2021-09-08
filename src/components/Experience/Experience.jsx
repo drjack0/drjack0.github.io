@@ -104,7 +104,7 @@ const Education = () => {
               </Fade>
             </Col>
           </Row>
-          <Row>
+          <Row style={{"margin-bottom":"20rem"}}>
             <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>

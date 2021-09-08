@@ -20,11 +20,12 @@
       }
     
       .project-wrapper {
-        margin-bottom: 10rem;
+        margin-bottom: 0rem;
         margin-top: 10rem;
     
         @include respond(phone) {
           margin-bottom: 0rem;
+          margin-top: 15rem;
         }
     
         .row {
@@ -32,6 +33,7 @@
     
           @include respond(phone) {
             margin-bottom: 4rem;
+            margin-top: 4rem;
           }
         }
     
