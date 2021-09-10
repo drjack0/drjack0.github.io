@@ -1,4 +1,12 @@
+require("dotenv").config({
+  //path: `.env.${process.env.NODE_ENV}`,
+  path: ".env"
+})
+
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://www.drjack0.github.io'
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -30,6 +38,14 @@ module.exports = {
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.drjack0.github.io',
+        sitemap: 'https://www.drjack0.github.io/sitemap/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
   ],
 };

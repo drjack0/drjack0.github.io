@@ -116,7 +116,7 @@ export const experienceData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Would you like to work with me? Awesome!',
+  cta: 'Would you like to work with me? Fill the form!',
   btn: 'Let\'s talk!',
   email: 'drjackdevelopment@gmail.com',
 };
