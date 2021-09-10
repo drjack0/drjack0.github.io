@@ -1,5 +1,4 @@
 require("dotenv").config({
-  //path: `.env.${process.env.NODE_ENV}`,
   path: ".env"
 })
 
@@ -30,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `DrJack0 Personal Webpage`,
+        name: `Matteo Giaccone | Developer`,
         short_name: `DrJack0`,
         start_url: `/`,
         background_color: `#fff`,

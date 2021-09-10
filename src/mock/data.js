@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 
 import fitMePDF from "../static/FitME_HCI_Project.pdf";
+import curriculumPDF from "../static/Curriculum_web.pdf"
 
 // HEAD DATA
 export const headData = {
@@ -19,11 +20,11 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'logos/site_logo_full.png',
-  paragraphOne: 'First Paragraph',
-  paragraphTwo: 'Second Paragraph',
-  paragraphThree: 'Third Paragraph',
-  resume: 'https://www.resumemaker.online/it.php', // if no resume, the button will not show up
+  img: 'profile.jpg',
+  paragraphOne: 'Hello world! My name is Matteo Giaccone and I’m an aspiring full stack developer. I finished my Bachelor’s in Software Engineering in December 2020, with a graduation score of 99/110, and, at the moment, I’m studying at “Sapienza University of Rome” to obtain the Master’s Degree in Engineering in Computer Science.',
+  paragraphTwo: 'During this years of books, math and coding, I’ve experimented lots of programming languages and architectural approaches, but my way is, no doubt, cloud architectures and Full Stack Developing, with a particular focus on AWS, NoSQL, Javascript and the enormous potential that these three entities, together, can show.',
+  paragraphThree: 'My ambition is to be able to continue learning and experimenting in this field, also improving my skills in the field of problem solving and teamwork, so that I can always take new paths and face ever greater challenges.',
+  resume: curriculumPDF, // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
