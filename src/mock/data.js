@@ -119,7 +119,7 @@ export const experienceData = [
 export const contactData = {
   cta: 'Would you like to work with me? Fill the form!',
   btn: 'Let\'s talk!',
-  email: 'drjackdevelopment@gmail.com',
+  email: 'info@drjack0.com',
 };
 
 // FOOTER DATA
