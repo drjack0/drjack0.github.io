@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.drjack0.github.io'
+    siteUrl: 'https://drjack0.com'
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Matteo Giaccone | Developer`,
+        name: `Matteo Giaccone | DrJack0 | Developer`,
         short_name: `DrJack0`,
         start_url: `/`,
         background_color: `#fff`,
@@ -41,8 +41,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.drjack0.github.io',
-        sitemap: 'https://www.drjack0.github.io/sitemap/sitemap-index.xml',
+        host: 'https://drjack0.com',
+        sitemap: 'https://drjack0.com/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

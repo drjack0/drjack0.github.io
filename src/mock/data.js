@@ -1,13 +1,15 @@
 import { nanoid } from 'nanoid';
 
 import fitMePDF from "../static/FitME_HCI_Project.pdf";
-import curriculumPDF from "../static/Curriculum_web.pdf"
+import curriculumPDF from "../static/Curriculum_web.pdf";
+import ogImage from "../static/site_logo_full.png";
 
 // HEAD DATA
 export const headData = {
-  title: 'Matteo Giaccone | Developer', // e.g: 'Name | Developer'
+  title: 'Matteo Giaccone | DrJack0 | Developer', // e.g: 'Name | Developer'
   lang: 'it', // e.g: en, es, fr, jp
-  description: 'Welcome to my personal Portfolio website', // e.g: Welcome to my website
+  description: 'Matteo Giaccone | Developer | Welcome to my personal portfolio', // e.g: Welcome to my website
+  image: ogImage
 };
 
 // HERO DATA
