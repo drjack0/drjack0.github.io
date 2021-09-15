@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 import fitMePDF from "../static/FitME_HCI_Project.pdf";
 import curriculumPDF from "../static/Curriculum_web.pdf";
-import ogImage from "../static/site_logo_full.png";
+import ogImage from "../static/og_logo.png";
 
 // HEAD DATA
 export const headData = {
