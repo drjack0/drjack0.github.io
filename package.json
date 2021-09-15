@@ -3,7 +3,7 @@
   "private": true,
   "description": "Personal Webpage Portfolio for DrJack0's Github",
   "version": "1.0.0",
-  "homepage": "https://drjack0.github.io/",
+  "homepage": "https://drjack0.com/",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -25,6 +25,7 @@
     "gatsby-plugin-robots-txt": "^1.6.10",
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.12",
+    "gatsby-plugin-sitemap": "^4.9.0",
     "gatsby-source-filesystem": "^2.3.12",
     "gatsby-transformer-sharp": "^2.5.5",
     "nanoid": "^3.1.10",

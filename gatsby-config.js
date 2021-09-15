@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -35,7 +36,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#7f449d`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: 'src/images/logos/site_logo_nobg.png',
       },
     },
     {
