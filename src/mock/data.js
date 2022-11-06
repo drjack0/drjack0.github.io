@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import fitMePDF from "../static/FitME_HCI_Project.pdf";
 import curriculumPDF from "../static/Curriculum_web.pdf";
 import ogImage from "../static/og_logo.png";
+import dataminingBrazil from "../static/Data_mining_project_covid19_brazil.pdf"
 
 // HEAD DATA
 export const headData = {
