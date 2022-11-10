@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://drjack0.com/sitemap/sitemap-index.xml
-Host: https://drjack0.com
