@@ -75,11 +75,18 @@ const Experience = () => {
           </Row>
 
           <Title title="Technical Skills" />
-          <Row style={{"marginTop":"10rem"}} >
+          <Row>
             <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
                   <SkillsImg alt={"img"} filename={"extra/aws.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/firebase.png"} />
                 </div>
               </Fade>
             </Col>
@@ -159,6 +166,13 @@ const Experience = () => {
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
                   <SkillsImg alt={"img"} filename={"extra/wordpress.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/ai.png"} />
                 </div>
               </Fade>
             </Col>
