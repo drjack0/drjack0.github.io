@@ -8,7 +8,6 @@ package-lock.json
 #EXTRA
 .cache
 .env
-#.tool-versions
-#.DS_Store
+.DS_Store
 
 
