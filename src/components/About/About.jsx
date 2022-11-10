@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
@@ -32,7 +32,7 @@ const About = () => {
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
-            </Fade>
+  </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -59,7 +59,7 @@ const About = () => {
                   </span>
                 )}
               </div>
-            </Fade>
+                </Fade>
           </Col>
         </Row>
       </Container>

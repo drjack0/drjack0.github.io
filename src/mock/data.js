@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import fitMePDF from "../static/FitME_HCI_Project.pdf";
 import curriculumPDF from "../static/Curriculum_web.pdf";
 import ogImage from "../static/og_logo.png";
-import dataminingBrazil from "../static/Data_mining_project_covid19_brazil.pdf"
+//import dataminingBrazil from "../static/Data_mining_project_covid19_brazil.pdf"
 
 // HEAD DATA
 export const headData = {
@@ -122,7 +122,7 @@ export const experienceData = [
 export const contactData = {
   cta: 'Would you like to work with me? Fill the form!',
   btn: 'Let\'s talk!',
-  email: 'info@drjack0.com',
+  email: 'drjackdevelopment@gmail.com',
 };
 
 // FOOTER DATA
@@ -144,9 +144,4 @@ export const footerData = {
       url: 'https://github.com/drjack0',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

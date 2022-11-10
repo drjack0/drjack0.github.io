@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 import SkillsImg from '../Image/SkillsImg';
 
-const Education = () => {
+const Experience = () => {
   const { experience } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -24,7 +24,7 @@ const Education = () => {
 
   return (
     <section id="experience">
-      <Container>
+      <Container style={{"align":"center"}}>
         <div className="project-wrapper">
           <Title title="Experience" />
           <Row>
@@ -68,13 +68,14 @@ const Education = () => {
                         </a>
                       )}
                     </div>
-                  </Fade>
+                      </Fade>
                 </Col>
             );
           })}
           </Row>
+
           <Title title="Technical Skills" />
-          <Row>
+          <Row style={{"marginTop":"10rem"}} >
             <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
@@ -103,8 +104,22 @@ const Education = () => {
                 </div>
               </Fade>
             </Col>
+            {/*<Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/jupyter.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/shopify.png"} />
+                </div>
+              </Fade>
+            </Col>*/}
           </Row>
-          <Row style={{"margin-bottom":"20rem"}}>
+          <Row style={{"marginBottom":"20rem"}}>
             <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
@@ -133,6 +148,20 @@ const Education = () => {
                 </div>
               </Fade>
             </Col>
+            {/*<Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/python.png"} />
+                </div>
+              </Fade>
+            </Col>
+            <Col>
+              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <div>
+                  <SkillsImg alt={"img"} filename={"extra/wordpress.png"} />
+                </div>
+              </Fade>
+        </Col>*/}
           </Row>
         </div>
       </Container>
@@ -140,4 +169,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -66,7 +66,7 @@ const Education = () => {
                         </a>
                       )}
                     </div>
-                  </Fade>
+                      </Fade>
                 </Col>
             );
           })}

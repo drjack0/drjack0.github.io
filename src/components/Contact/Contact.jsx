@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -159,7 +159,7 @@ const Contact = () => {
               </a>
             </p>
           </div>
-        </Fade>
+              </Fade>
       </Container>
     </section>
   );

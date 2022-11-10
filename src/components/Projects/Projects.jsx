@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
+import {Fade} from 'react-awesome-reveal';
+import Tilt from 'react-parallax-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -68,7 +68,7 @@ const Projects = () => {
                         </a>
                       )}
                     </div>
-                  </Fade>
+                      </Fade>
                 </Col>
                 <Col lg={8} sm={12}>
                   <Fade
@@ -86,17 +86,15 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
+                            reverse={false}
+                            tiltMaxAngleX={8}
+                            tiltMaxAngleY={8}
+                            perspective={1000}
+                            scale={1.15}
+                            speed={30000}
+                            transition={true}
+                            reset={true}
+                            transitionEasing={'cubic-bezier(.03,.98,.52,.99)'}
                         >
                           <div data-tilt className="thumbnail rounded">
                             <ProjectImg alt={title} filename={img} />
@@ -104,7 +102,7 @@ const Projects = () => {
                         </Tilt>
                       </a>
                     </div>
-                  </Fade>
+                        </Fade>
                 </Col>
               </Row>
             );

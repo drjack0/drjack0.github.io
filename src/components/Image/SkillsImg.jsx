@@ -1,37 +1,35 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import {GatsbyImage, getImage} from 'gatsby-plugin-image';
 
-const SkillsImg = ({ filename, alt }) => (
-    <StaticQuery
-    query={graphql`
-      query {
-        images: allFile {
-          edges {
-            node {
-              relativePath
-              name
-              childImageSharp {
-                fixed(width: 65) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
+const SkillsImg = ({ filename, alt }) => {
+  const data  = useStaticQuery(graphql`
+  query {
+    images: allFile(
+      filter: {
+        absolutePath: { regex: "/images/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(
+            width: 65
+            layout: FIXED
+            )
         }
       }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
-
-      if (!image) return null;
-
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img alt={alt} fixed={imageFixed} />;
-    }}
-  />
-);
+    }
+  }
+`);
+const image = data.images.nodes.find((n) => n.relativePath.includes(filename));
+if (!image) {
+  return null
+}
+const imageFixed = getImage(image.childImageSharp);
+      return <GatsbyImage alt={alt} image={imageFixed} />;
+    }
 
 SkillsImg.propTypes = {
   filename: PropTypes.string,

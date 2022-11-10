@@ -4,15 +4,15 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://drjack0.com'
+    siteUrl: 'https://drjack0.github.io'
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,14 +38,6 @@ module.exports = {
         display: `standalone`,
         icon: 'src/images/logos/site_logo_nobg.png',
       },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://drjack0.com',
-        sitemap: 'https://drjack0.com/sitemap/sitemap-index.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
     },
   ],
 };
