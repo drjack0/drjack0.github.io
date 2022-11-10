@@ -104,7 +104,7 @@ const Experience = () => {
                 </div>
               </Fade>
             </Col>
-            {/*<Col>
+            <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
                   <SkillsImg alt={"img"} filename={"extra/jupyter.png"} />
@@ -117,7 +117,7 @@ const Experience = () => {
                   <SkillsImg alt={"img"} filename={"extra/shopify.png"} />
                 </div>
               </Fade>
-            </Col>*/}
+            </Col>
           </Row>
           <Row style={{"marginBottom":"20rem"}}>
             <Col>
@@ -148,7 +148,7 @@ const Experience = () => {
                 </div>
               </Fade>
             </Col>
-            {/*<Col>
+            <Col>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div>
                   <SkillsImg alt={"img"} filename={"extra/python.png"} />
@@ -161,7 +161,7 @@ const Experience = () => {
                   <SkillsImg alt={"img"} filename={"extra/wordpress.png"} />
                 </div>
               </Fade>
-        </Col>*/}
+            </Col>
           </Row>
         </div>
       </Container>
