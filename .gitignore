@@ -1,11 +1,14 @@
+#FOLDERS
 node_modules
-
-.cache
-
 public
 
+#SPECIFIC FILES
 package-lock.json
 
+#EXTRA
+.cache
 .env
+.tool-versions
+.DS_Store
 
 
